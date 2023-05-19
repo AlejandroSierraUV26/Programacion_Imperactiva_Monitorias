@@ -1,0 +1,14 @@
+
+Ejercicio 1.	
+Realizar un algoritmo que genere un codigo de 4 digitos, 
+dos alfabeticos y dos numericos.
+
+
+Ejercicio 2.
+Escribir un programa que almacene en una lista los números del 1 al 10 
+y los muestre por pantalla en orden inverso separados por comas.
+
+
+Ejercicio 3.
+Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 
+22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.

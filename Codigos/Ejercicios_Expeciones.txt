@@ -1,0 +1,14 @@
+Ejercicio 1. 
+
+Pedir al usuario que ingrese dos numeros, uno entero y uno decimal, 
+verificar que no tengan errores de ningun tipo y mostrar la 
+division de ambos. 
+
+Decimal numerador y entero denominador.
+
+
+Ejercicio 2. 
+
+En un codigo de algun laboratorio que ya haz realizado 
+anteriormente aplicar la logica de las expeciones que 
+evite la mayoria de errores más comunes posibles.
