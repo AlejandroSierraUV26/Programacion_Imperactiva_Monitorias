@@ -43,7 +43,9 @@ lista.count(2)
 
 
 #* Cuenta cuantas veces existe un elemento en una lista
-
+lista = [1,1,1,1,2]
+lista.index(1)
+>(0,1,2,3)
 
 index()
 
@@ -60,8 +62,12 @@ pop()
 remove()
 
 #* Elimina el elemento buscado en una lista, elimina el primero que encuentra.
+TODO:  el primero en ser encontrado se elimina 
 
 reverse()
+
+[1,2,3,4,5]
+[5,4,3,2,1]
 
 #* Da la vuelta a una lista, el primer elemento hacia el ultimo.
 
@@ -80,29 +86,37 @@ sort()
 
 
 
-#TODO: Realizar un algoritmo que cuente cuantos elementos hay en una lista, segun el numero
-def buscar_numero(numero,numero2):
-    contador = 0 
-    contador2 = 0
-    for i in range(len(lista)):
-        if lista[i] == numero :
-            contador+=1
-        if lista[i] == numero2 :
-            contador2+=1
-    return contador,contador2
-lista = [1,1,1,1,2]
-numero = int(input("Ingrese el numero que desea buscar : "))
-numero2 = int(input("Ingrese el numero que desea buscar : "))
-print(buscar_numero(numero,numero2))
+# #TODO: Realizar un algoritmo que cuente cuantos elementos hay en una lista, segun el numero
+# def buscar_numero(numero,numero2):
+#     contador = 0 
+#     contador2 = 0
+#     for i in range(len(lista)):
+#         if lista[i] == numero :
+#             contador+=1
+#         if lista[i] == numero2 :
+#             contador2+=1
+#     return contador,contador2
+# lista = [1,1,1,1,2]
+# numero = int(input("Ingrese el numero que desea buscar : "))
+# numero2 = int(input("Ingrese el numero que desea buscar : "))
+# print(buscar_numero(numero,numero2))
     
     
-    
-    
-    
-    
-    
-    
-    
+        
+lista = [1,1,1,0,2,0,0,0,0,0,0,0,0,1]
+lista_guardar = []
+numero = 1
+for i in range(len(lista)):
+    #?Condicional
+    if numero == lista[i]:
+        lista_guardar.append(i)
+print(lista_guardar)
+print(lista.index(1))
+        
+
+
+
+
     
     
     
