@@ -113,10 +113,5 @@ for i in range(len(lista)):
 print(lista_guardar)
 print(lista.index(1))
         
-
-
-
-
-    
-    
-    
+lista.remove(1)
+print(lista)

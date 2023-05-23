@@ -28,7 +28,8 @@ lista = np.array([[0,0],[0,0]])
 #Opcion 2 
 #Matriz 2x2 de 0 por numpy
 #Los parametros deben ir en parentexis y dando su dimension
-lista2 = np.zeros((2,3))
+a = np.array([[2,3],[1,-4,]])
+b = np.array([8,-7])
+x = np.linalg.solve(a,b)
+print(x)
 
-
-print(lista2)

@@ -12,3 +12,19 @@ y los muestre por pantalla en orden inverso separados por comas.
 Ejercicio 3.
 Escribir un programa que almacene en una lista los siguientes precios, 50, 75, 46, 
 22, 80, 65, 8, y muestre por pantalla el menor y el mayor de los precios.
+
+Ejercicio 4 
+Escribir un programa que almacene el abecedario en una lista, 
+elimine de la lista las letras que ocupen posiciones múltiplos de 3, 
+y muestre por pantalla la lista resultante.
+0 -> A
+3 -> D
+
+letras = ["A", "B", "C", "D", "E", "F", "G", 
+          "H", "I", "J", "K", "L", "M", "N", 
+          "Ñ", "O", "P", "Q", "R", "S", "T", 
+          "U", "V", "W", "X", "Y", "Z"]
+
+>remove()
+
+
