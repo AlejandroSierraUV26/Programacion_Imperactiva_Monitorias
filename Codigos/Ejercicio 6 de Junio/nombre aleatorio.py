@@ -1,19 +1,11 @@
-import numpy as np
 import random
-from tabulate import tabulate
 
-nombres = ["Alejandro","Maria","Carlos","Daniel","Karen","Juan","Camilo","Camila","Juana","Martha","Isabela","Valentina"]
-apellido = ["Sierra","Muñoz","Rodriguez","Gutierrez","Ramirez","Lopez","Flores","Hernandez"]
+nombres = ["Alejandro","Maria","Karen","Daniel","John","Juan","Sebastian","Camila"]
+apellidos = ["Sierra","Valencia","Rodriguez","Gomez","Lopez","Muñoz","Garcia","Torres"]
 
+for i in range(30):
+    numero_nombre = random.randint(0, len(nombres)-1)
+    numero_apellido = random.randint(0, len(apellidos)-1)
+    print(f"Persona {i+1}\n")
+    print(nombres[numero_nombre] + " " + apellidos[numero_apellido])
 
-for i in range(50):
-    numero_nombre = random.randint(0,len(nombres)-1)
-    numero_apellido = random.randint(0,len(apellido)-1)
-    nombre_completo = nombres[numero_nombre] +" "+ apellido[numero_apellido]
-    edad = random.randint(1,80)
-    print(nombre_completo)
-    print(f"Edad : {edad}")
-    print()
-    
-    
-    

@@ -25,12 +25,6 @@
     
     Y si la persona tiene entre 30 y 35 años paga un 5% menos 
 
-
-
-
-
-
-
 !Mostrar la informacion de las personas que estan dentro:
 
     - Nombre
