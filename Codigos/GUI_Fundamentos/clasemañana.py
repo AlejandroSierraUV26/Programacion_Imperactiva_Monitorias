@@ -44,7 +44,7 @@ mensaje2.configure(bg="white")
 mensaje2.config(font=("Arial", 20), fg = "black")
 
 mensaje_resultado = tk.Label(ventana_principal, text = "")
-mensaje_resultado.pack()
+
 
 campo1 = tk.Entry(ventana_principal)
 campo2 = tk.Entry(ventana_principal)
@@ -71,15 +71,13 @@ campo1.pack()
 
 mensaje2.pack()
 
-
 campo2.pack()
-
 
 botton1.pack()
 botton2.pack()
 botton3.pack()
 
-
+mensaje_resultado.pack()
 
 
 ventana_principal.mainloop()
