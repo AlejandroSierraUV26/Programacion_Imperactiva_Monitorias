@@ -12,19 +12,22 @@ def insertar_persona():
     lista.append(persona)
 
 def mostrar_personas():
+    ventana.withdraw()
     ventana2 = ctk.CTkToplevel()
     ventana2.title("Ventana emergente")
     ventana2.geometry("300x1000")
     for i in range(0, len(lista)):
         label = ctk.CTkLabel(master = ventana2, text=f"Nombre : {lista[i][0]} Edad : {lista[i][1]} \n")
         label.pack(pady=20)
-    close_button = ctk.CTkButton(master = ventana2, text="Cerrar", command=ventana2.destroy)
+    close_button = ctk.CTkButton(master = ventana2, text="Cerrar",  command=lambda: [volver(), ventana2.destroy()])
+    
     close_button.pack()
     
     
     ventana2.mainloop()
 
-
+def volver():
+    ventana.deiconify()
 
 # ctk.set_appearance_mode("light")
 
