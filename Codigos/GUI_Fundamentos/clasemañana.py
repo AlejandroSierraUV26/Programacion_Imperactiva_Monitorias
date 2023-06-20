@@ -6,19 +6,19 @@ def multiplicar():
     numero2 = int(campo2.get())
     
     mensaje_resultado.config(text = f"{numero1} x {numero2}  = {numero1*numero2}")
-    # messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
+    messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
 def sumar():
     numero1 = int(campo1.get())
     numero2 = int(campo2.get())
     
     mensaje_resultado.config(text = f"{numero1} + {numero2}  = {numero1+numero2}")
-    # messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
+    messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
 def restar():
     numero1 = int(campo1.get())
     numero2 = int(campo2.get())
     
     mensaje_resultado.config(text = f"{numero1} - {numero2}  = {numero1-numero2}")
-    # messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
+    messagebox.showinfo("Mensaje", f"{numero1} x {numero2}  = {numero1*numero2}")
 
 ventana_principal = tk.Tk()
 
