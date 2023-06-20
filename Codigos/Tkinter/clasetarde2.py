@@ -10,11 +10,20 @@ def insertar_persona():
     persona.append(nombre)
     persona.append(edad)
     lista.append(persona)
-    print(lista)
-    
 
+def mostrar_personas():
+    ventana2 = ctk.CTkToplevel()
+    ventana2.title("Ventana emergente")
+    ventana2.geometry("300x1000")
+    for i in range(0, len(lista)):
+        label = ctk.CTkLabel(master = ventana2, text=f"Nombre : {lista[i][0]} Edad : {lista[i][1]} \n")
+        label.pack(pady=20)
+    close_button = ctk.CTkButton(master = ventana2, text="Cerrar", command=popup.destroy)
+    close_button.pack()
     
     
+    ventana2.mainloop()
+
 
 
 # ctk.set_appearance_mode("light")
@@ -36,7 +45,9 @@ campotexto2.place(relx = 0.6, rely = 0.45, anchor = tk.CENTER)
 
 
 boton1 = ctk.CTkButton(master = ventana, text = "Enviar", command = insertar_persona)
-boton1.place(relx = 0.45, rely = 0.6, anchor = tk.CENTER)
+boton1.place(relx = 0.3, rely = 0.65, anchor = tk.CENTER)
 
+boton2 = ctk.CTkButton(master = ventana, text = "Mostrar", command = mostrar_personas)
+boton2.place(relx = 0.6, rely = 0.65, anchor = tk.CENTER)
 
 ventana.mainloop()
