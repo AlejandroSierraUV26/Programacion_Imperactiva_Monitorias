@@ -21,13 +21,14 @@ lista = []
 def open_popup():
     popup = customtkinter.CTkToplevel()
     popup.title("Ventana emergente")
-    popup.geometry("300x200")
+    popup.geometry("300x1000")
     
-    label = customtkinter.CTkLabel(popup, text="¡Hola desde la ventana emergente!")
-    label.pack(pady=20)
-    
+    for i in range(0, len(lista)):
+        label = customtkinter.CTkLabel(popup, text=f"Nombre : {lista[i][0]} Identificacion : {lista[i][1]} \n")
+        label.pack(pady=20)
     close_button = customtkinter.CTkButton(popup, text="Cerrar", command=popup.destroy)
     close_button.pack()
+    
     popup.mainloop()
 
 def funcionBoton():
