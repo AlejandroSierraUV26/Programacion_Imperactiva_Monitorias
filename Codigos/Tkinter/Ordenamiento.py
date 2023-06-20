@@ -17,11 +17,28 @@ x_pos = int((ancho_pantalla - ancho_ventana) / 2)  # Centrar horizontalmente
 y_pos = int((alto_pantalla - alto_ventana) / 2)  # Centrar verticalmente
 app.geometry(f"{ancho_ventana}x{alto_ventana}+{x_pos}+{y_pos}")
 
+lista = []
+def open_popup():
+    popup = customtkinter.CTkToplevel()
+    popup.title("Ventana emergente")
+    popup.geometry("300x200")
+    
+    label = customtkinter.CTkLabel(popup, text="¡Hola desde la ventana emergente!")
+    label.pack(pady=20)
+    
+    close_button = customtkinter.CTkButton(popup, text="Cerrar", command=popup.destroy)
+    close_button.pack()
+    popup.mainloop()
+
 def funcionBoton():
+    persona = []
     nombre = campo1.get()
-    print(f"Nombre {nombre}")
-    texto3.configure(text =nombre)
-    texto3.place(relx=0.5, rely=0.9, anchor=tkinter.CENTER)
+    identificacion = campo2.get()
+    persona.append(nombre)
+    persona.append(identificacion)
+    lista.append(persona)
+    print(lista)
+    
     
 texto1 = customtkinter.CTkLabel(master=app, text = "Nombre", font=("Arial",20))
 texto2 = customtkinter.CTkLabel(master=app, text = "Identificacion", font=("Arial",20))
@@ -33,7 +50,7 @@ campo2 = customtkinter.CTkEntry(master=app)
 
 button = customtkinter.CTkButton(master=app, text = "Boton" ,command=funcionBoton)
 
-button_ver = customtkinter.CTkButton(master=app, text = "Ver", state = "disabled")
+button_ver = customtkinter.CTkButton(master=app, text = "Ver", command=open_popup)
 
 texto1.place(relx=0.3333, rely=0.3, anchor=tkinter.CENTER)
 texto2.place(relx=0.6666, rely=0.3, anchor=tkinter.CENTER)
