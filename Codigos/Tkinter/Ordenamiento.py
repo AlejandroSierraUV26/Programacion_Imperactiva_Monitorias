@@ -33,7 +33,8 @@ campo2 = customtkinter.CTkEntry(master=app)
 
 button = customtkinter.CTkButton(master=app, text = "Boton" ,command=funcionBoton)
 
-button_ver = customtkinter.CTkButton(master=app, text = "Ver")
+button_ver = customtkinter.CTkButton(master=app, text = "Ver", state = "disabled")
+button_ver.configure(state = "normal")
 
 texto1.place(relx=0.3333, rely=0.3, anchor=tkinter.CENTER)
 texto2.place(relx=0.6666, rely=0.3, anchor=tkinter.CENTER)

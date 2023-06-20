@@ -10,20 +10,20 @@ volver al formulario principal.
 
 """
 
-import customtkinter as ctk
+import customtkinter 
 
 def button_clicked():
     print("¡Botón clicado!")
 
-root = ctk.tkinter.Tk()
+root = customtkinter.CTk()
 
-custom_button = ctk.CTkButton(root, text="Mi botón", command=button_clicked)
+custom_button = customtkinter.CTkButton(master = root, text="Mi botón", command=button_clicked)
 custom_button.pack()
 
-disable_button = ctk.CTkButton(root, text="Deshabilitar", command=custom_button.disable)
+disable_button = customtkinter.CTkButton(master = root, text="Deshabilitar", command=custom_button.disable)
 disable_button.pack()
 
-enable_button = ctk.CTkButton(root, text="Habilitar", command=custom_button.enable)
+enable_button = customtkinter.CTkButton(master = root, text="Habilitar", command=custom_button.enable)
 enable_button.pack()
 
 root.mainloop()
