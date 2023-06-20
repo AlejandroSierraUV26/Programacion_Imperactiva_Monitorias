@@ -18,7 +18,7 @@ def mostrar_personas():
     for i in range(0, len(lista)):
         label = ctk.CTkLabel(master = ventana2, text=f"Nombre : {lista[i][0]} Edad : {lista[i][1]} \n")
         label.pack(pady=20)
-    close_button = ctk.CTkButton(master = ventana2, text="Cerrar", command=popup.destroy)
+    close_button = ctk.CTkButton(master = ventana2, text="Cerrar", command=ventana2.destroy)
     close_button.pack()
     
     
