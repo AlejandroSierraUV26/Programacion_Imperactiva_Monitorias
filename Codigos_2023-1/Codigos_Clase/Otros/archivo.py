@@ -15,4 +15,4 @@ numero = separar(numero_original)
 if(numero > 9):
     numero = separar(numero)
 print(numero)
-    
+        
