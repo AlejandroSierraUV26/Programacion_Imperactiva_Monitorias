@@ -24,6 +24,6 @@ precio_lote = float(input("Ahora, ingrese el precio por metro cuadrado del lote:
 #Procesos empleados
 numero_hectareas = (altura_lote * base_lote) / 10000
 valor_lote = numero_hectareas * (precio_lote * 10000)
-impuesto_predial =( 0.013 / valor_lote )
+impuesto_predial =(valor_lote / 0.013)
 #Salida de los datos
 print(f"Segun los datos ingresados, el lote tiene {numero_hectareas} Hectareas cuadradas con un precio de ${valor_lote}, el valor del impuesto predial es ${impuesto_predial} ")
