@@ -63,16 +63,27 @@
 
 
 
-def Collazt(num):
-    if num == 1:
-        return 1
-    else:
-        if(num%2 == 0):
-            return Collazt(num/2)            
-        else:
-            return Collazt(num*3+1)
+# def Collazt(num):
+#     if num == 1:
+#         return 1
+#     else:
+#         if(num%2 == 0):
+#             return Collazt(num/2)            
+#         else:
+#             return Collazt(num*3+1)
     
-print(Collazt(120))
-print(Collazt(20))
-print(Collazt(10))
+# print(Collazt(120))
+# print(Collazt(20))
+# print(Collazt(10))
             
+            
+    
+def ConvertirBinario(numero):
+    if numero == 0:
+        return "0"
+    elif numero == 1:
+        return "1"
+    else:
+        return ConvertirBinario(numero//2) + str(numero%2)
+    
+print(ConvertirBinario(35))
