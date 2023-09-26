@@ -30,7 +30,7 @@ def CalcularVolumen(altura):
     return litros
 
 if __name__ == "__main__":
-    
+
     altura_actual = float(input("Ingrese la altura actual del liquido: "))
 
     if altura_actual<=0 or altura_actual >5:
