@@ -1,5 +1,5 @@
 """
-Realizar una funcion que determine 
+Realizar una funcion que determine que un numero
 sea divible por 5 o por el 7.
 
 Comprobar con los numeros del 1 al 40.
@@ -32,3 +32,5 @@ Mostrar el resultado de esta manera :
 >>> 40 True
 
 """
+
+    

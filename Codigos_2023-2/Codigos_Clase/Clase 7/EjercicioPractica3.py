@@ -26,3 +26,14 @@ Imprimir la palabra esternocleidomastoideo, letra por letra.
 >>> e
 >>> o
 """
+
+# len(palabra) ==> Numero de elementos 
+palabra = "esternocleidomastoideo"
+numero = len(palabra)
+
+print(numero)
+
+
+for i in range(0, numero-1):
+    print(palabra[i])
+    
