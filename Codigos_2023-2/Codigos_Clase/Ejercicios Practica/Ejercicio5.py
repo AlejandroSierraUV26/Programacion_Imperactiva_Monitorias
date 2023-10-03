@@ -1,7 +1,8 @@
-#def message():
-#     alt = 1
-#     print("Hola Mundo")
-# print(alt)
+def message():
+    alt = 1
+    print("Hola Mundo")
+    print(alt)
+message()
 
 """
 >>> a. 1
@@ -11,3 +12,5 @@
 
 
 """
+
+
