@@ -1,12 +1,9 @@
 a = 1
-b = 10
 def fun():
     a = 2
-    global b
-    print(a+b)
+    print(a)
 fun()
 print(a)
-
 """
 >>> a. 1 2
 >>> b. 2 2

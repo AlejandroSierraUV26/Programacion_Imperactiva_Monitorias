@@ -4,9 +4,6 @@ def imc(peso,altura):
     return peso/altura ** 2
 
 print(imc(325.5,1.8))
-
-
-
 """
 >>> a. 24.691358024691358
 >>> b. 11.358024691351238

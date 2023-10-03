@@ -1,8 +1,8 @@
 def message():
+    global alt 
     alt = 1
     print("Hola Mundo")
-    print(alt)
-message()
+print(alt)
 
 """
 >>> a. 1

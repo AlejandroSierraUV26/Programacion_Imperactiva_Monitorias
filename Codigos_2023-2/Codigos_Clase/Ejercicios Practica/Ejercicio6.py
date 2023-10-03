@@ -1,25 +1,35 @@
+"""
+
+Realizar un programa que haga una multiplicacion
+de 3 numeros y el usuario debera dar la respuesta correcta.
+Sino no da la respuesta correcta debera mostrar cual era y seguir
+con la siguiente, debe hacerse 10 veces.
+
+"""
 import random
+
+
+def generarNumeros():
+    numero1 = random.randint(1, 10)
+    numero2 = random.randint(1, 10)
+    numero3 = random.randint(1, 10)
+    return numero1, numero2, numero3
+
 for i in range(0,10):
-    while(True):
-        n1 = random.randint(1, 10)
-        n2 = random.randint(1, 10)
-        if n1 == 3 and n2 == 5 or n1 == 5 and n2 ==3:
-            continue
-        else:
-            break
-        
+    print("Resuelve la multiplicacion de los siguientes numeros: ")
+    n1,n2,n3 = generarNumeros()
 
-    resultado = n1 * n2
+    multiplicacion = n1*n2*n3
+    print(n1,"*",n2,"*",n3,"=")
 
-    print("¿Cuánto es", n1, "por", n2, "?")
+    resultado = int(input("Ingrese el resultado: "))
 
-    respuesta_correcta = int(input("Ingrese la respuesta : "))
-
-    if respuesta_correcta == resultado:
-        print("¡Respuesta correcta!")
+    if resultado == multiplicacion:
+        print("Ganaste")
+        break
     else:
-        print("¡Respuesta incorrecta!")
-        print("La respuesta correcta es", resultado)
+        print("Resultado incorrecto")
+        print("El resultado es ", multiplicacion)
 
 
 
