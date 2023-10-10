@@ -3,6 +3,7 @@ La empresa El Barrigon S.A.S requiere un programa que permita calcular el sueldo
 a pagar en un mes de trabajo, para este ejercicio vamos a suponer que un mes tiene 30 dias.
 
 En la empresa tenemos tres tipos de trabajadores:
+
 a) Ejecutivo: Tiene un salario base de $3.000.000
 b) Administrativo: Tiene un salario base de $2.000.000
 c) Auxiliar: Tiene un salario base de $1.500.000
@@ -33,38 +34,97 @@ El salario seria
 >>> Salario total :
 2505000
 
+
+Entrada :   
+    horas_trabajadas 
+    nombre 
+    años_trabajados
+    cargo 
+    
+Salida :
+    salario_total
+
 """
 
-def salario(cargo, horas_trabajadas,horas_extra,años_trabajador):
+nombre = input("Ingrese su nombre : ")
+cargo = input("Ingrese su cargo : ")
+horas_trabajadas = int(input("Ingrese las horas trabajadas : "))
+años_trabajadas = int(input("Ingrese las años trabajadas : "))
+
+def salario(cargo):
     if cargo == "Ejecutivo":
-        salario_base = 3000000
+        return 3_000_000
     elif cargo == "Administrativo":
-        salario_base = 2000000
+        return 2_000_000
     elif cargo == "Auxiliar":
-        salario_base = 1500000
+        return 1_500_000
     else:
-        print("Cargo no valido")
-        return 0
-    if horas_trabajadas >=192:
-        salario_total = salario_base + (horas_extra*1.2) * (salario_base/192)
-        if años_trabajador >= 5:
+        return None
+
+def pago_empleado(salario,horas,año_trabajadas):
+    if horas >= 192:
+        salario_total = salario + (horas-192)*1.2 *(salario/192)
+        if año_trabajadas >= 5:
             salario_total = salario_total*1.2
         return salario_total
     else:
         print("Tiempo de trabajo no valido")
         return 0
+
+salario_base = salario(cargo)
+pago_neto = pago_empleado(salario_base, horas_trabajadas, años_trabajadas)
+
+print("Nombre : ", nombre)
+print("Salario : ", pago_neto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def salario(cargo, horas_trabajadas,horas_extra,años_trabajador):
+
+#     if cargo == "Ejecutivo":
+#         salario_base = 3000000
+#     elif cargo == "Administrativo":
+#         salario_base = 2000000
+#     elif cargo == "Auxiliar":
+#         salario_base = 1500000
+#     else:
+#         print("Cargo no valido")
+#         return 0
+#     if horas_trabajadas >=192:
+#         salario_total = salario_base + (horas_extra*1.2) * (salario_base/192)
+#         if años_trabajador >= 5:
+#             salario_total = salario_total*1.2
+#         return salario_total
+#     else:
+#         print("Tiempo de trabajo no valido")
+#         return 0
     
-nombre = "Alejandro"
+# nombre = "Alejandro"
 
-cargo = "Administrativo"
+# cargo = "Administrativo"
 
-horas = 192
+# horas = 192
 
-horas_extra = 7
+# horas_extra = 7
 
-años_trabajados = 8
+# años_trabajados = 8
 
 
-print(salario(cargo,horas,horas_extra,años_trabajados))
+# print(salario(cargo,horas,horas_extra,años_trabajados))
 
 

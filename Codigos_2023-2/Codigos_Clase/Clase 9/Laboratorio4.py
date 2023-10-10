@@ -10,8 +10,8 @@ def calcularDefinitiva(parcial,examen,tarea1,tarea2,participacion):
     examen = 40/100 * examen
     tareas = 20/100 * ((tarea1+tarea2)/2)
     participacion = 20/100 * participacion
-    
-    return (parcial,examen,participacion,tareas)
+    notafinal = parcial + examen + participacion + tareas
+    return notafinal
     
     
 def calcularClasificacion(nota, materia):
@@ -74,8 +74,7 @@ for i in range(0,4):
     tarea2 = 4.2
     examen_final = 4.6
     participacion = 3.6 
-    parcial,examen_final,participacion,tareas = calcularDefinitiva(parcial,examen_final,tarea1,tarea2,participacion)
-    promedio = parcial + examen_final +participacion + tareas
+    promedio = calcularDefinitiva(parcial,examen_final,tarea1,tarea2,participacion) 
 
     nombre_asignatura = materias[i]
     print("Nombre Alumno : ", nombre)

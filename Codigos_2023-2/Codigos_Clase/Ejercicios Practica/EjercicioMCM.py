@@ -7,8 +7,11 @@ Ejemplo 1
 
 >>> Ingresa 20
 
->>> 20 = 5 * 4
+>>> 20 = 5  * 4
+>>> 20 = 10 * 2
+>>> 20 = 20 * 1
 
+!Pista : Tabla de multiplicar
 Ejemplo 2
 
 >>> Ingresa 50
