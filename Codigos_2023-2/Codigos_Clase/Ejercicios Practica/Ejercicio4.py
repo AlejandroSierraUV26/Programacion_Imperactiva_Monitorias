@@ -1,12 +1,12 @@
-x = 1
+x = 2 - 1 
 y = 1.0
-z = "1"
+z = int("2") - 1
 
 if x == y:
     print("uno")
-if y == int(z):
+if y == z:
     print("dos")
-elif x == y :
+if x == y :
     print("tres")
 else:
     print("cuatro")
@@ -17,6 +17,6 @@ else:
 >>> c. uno dos 
 >>> d. tres cuatro
 >>> e. 1 2 3
-
+>>> f. 1 2 3
 
 """
