@@ -1,66 +1,53 @@
-import customtkinter 
-import tkinter
+import tkinter as tk
+from tkinter import messagebox
 
-customtkinter.set_appearance_mode("System")
-#Opciones light, dark, default
-customtkinter.set_default_color_theme("blue")
-#Opciones dark-blue, green, blue default
+def validar_credenciales(usuario, contrasena):
+    # Aquí deberías realizar la lógica para validar las credenciales.
+    # Esto es solo un ejemplo simple.
+    return usuario == "usuario" and contrasena == "contrasena"
 
-app = customtkinter.CTk()
+def iniciar_sesion():
+    usuario = entry_usuario.get()
+    contrasena = entry_contrasena.get()
 
-app.title("GUI 1")
-ancho_pantalla = app.winfo_screenwidth()
-alto_pantalla = app.winfo_screenheight()
-ancho_ventana = 600
-alto_ventana = 300
-x_pos = int((ancho_pantalla - ancho_ventana) / 2)  # Centrar horizontalmente
-y_pos = int((alto_pantalla - alto_ventana) / 2)  # Centrar verticalmente
-app.geometry(f"{ancho_ventana}x{alto_ventana}+{x_pos}+{y_pos}")
+    if validar_credenciales(usuario, contrasena):
+        messagebox.showinfo("Inicio de Sesión", "Inicio de sesión exitoso")
+        # Puedes agregar aquí la lógica para abrir la siguiente ventana o realizar otras acciones después del inicio de sesión
+    else:
+        messagebox.showerror("Error", "Credenciales incorrectas")
 
-lista = []
-def open_popup():
-    popup = customtkinter.CTkToplevel()
-    popup.title("Ventana emergente")
-    popup.geometry("300x1000")
-    
-    for i in range(0, len(lista)):
-        label = customtkinter.CTkLabel(popup, text=f"Nombre : {lista[i][0]} Identificacion : {lista[i][1]} \n")
-        label.pack(pady=20)
-    close_button = customtkinter.CTkButton(popup, text="Cerrar", command=popup.destroy)
-    close_button.pack()
-    
-    popup.mainloop()
+# Crear la ventana principal
+ventana = tk.Tk()
+ventana.title("Inicio de Sesión")
 
-def funcionBoton():
-    persona = []
-    nombre = campo1.get()
-    identificacion = campo2.get()
-    persona.append(nombre)
-    persona.append(identificacion)
-    lista.append(persona)
-    print(lista)
-    
-    
-texto1 = customtkinter.CTkLabel(master=app, text = "Nombre", font=("Arial",20))
-texto2 = customtkinter.CTkLabel(master=app, text = "Identificacion", font=("Arial",20))
+# Crear widgets (etiquetas, entradas, botones)
+label_usuario = tk.Label(ventana, text="Usuario:")
+label_contrasena = tk.Label(ventana, text="Contraseña:")
+entry_usuario = tk.Entry(ventana)
+entry_contrasena = tk.Entry(ventana, show="*")  # La opción show="*" oculta las contraseñas
+boton_iniciar_sesion = tk.Button(ventana, text="Iniciar Sesión", command=iniciar_sesion)
 
-texto3 = customtkinter.CTkLabel(master=app, text = "", font=("Arial",20))
+# Colocar widgets en la ventana
+label_usuario.grid(row=0, column=0, padx=10, pady=5, sticky=tk.W)
+label_contrasena.grid(row=1, column=0, padx=10, pady=5, sticky=tk.W)
+entry_usuario.grid(row=0, column=1, padx=10, pady=5)
+entry_contrasena.grid(row=1, column=1, padx=10, pady=5)
+boton_iniciar_sesion.grid(row=2, column=0, columnspan=2, pady=10)
 
-campo1 = customtkinter.CTkEntry(master=app)
-campo2 = customtkinter.CTkEntry(master=app)
+# Obtener el tamaño de la pantalla
+ancho_pantalla = ventana.winfo_screenwidth()
+alto_pantalla = ventana.winfo_screenheight()
 
-button = customtkinter.CTkButton(master=app, text = "Boton" ,command=funcionBoton)
+# Obtener las dimensiones de la ventana
+ancho_ventana = 300  # Ajusta según sea necesario
+alto_ventana = 150  # Ajusta según sea necesario
 
-button_ver = customtkinter.CTkButton(master=app, text = "Ver", command=open_popup)
+# Calcular las coordenadas para centrar la ventana
+x_pos = (ancho_pantalla - ancho_ventana) // 2
+y_pos = (alto_pantalla - alto_ventana) // 2
 
-texto1.place(relx=0.3333, rely=0.3, anchor=tkinter.CENTER)
-texto2.place(relx=0.6666, rely=0.3, anchor=tkinter.CENTER)
+# Establecer la geometría de la ventana para centrarla
+ventana.geometry(f"{ancho_ventana}x{alto_ventana}+{x_pos}+{y_pos}")
 
-campo1.place(relx=0.3333, rely=0.5, anchor=tkinter.CENTER)
-campo2.place(relx=0.6666, rely=0.5, anchor=tkinter.CENTER)
-
-
-button.place(relx=0.5, rely=0.8, anchor=tkinter.CENTER)
-button_ver.place(relx=0.8, rely=0.8, anchor=tkinter.CENTER)
-
-app.mainloop()
+# Iniciar el bucle principal
+ventana.mainloop()
