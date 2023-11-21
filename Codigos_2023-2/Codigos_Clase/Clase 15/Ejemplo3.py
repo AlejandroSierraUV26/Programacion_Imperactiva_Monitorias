@@ -16,7 +16,7 @@ Nota 3 : Proyecto Final 30%
 
 
 Nombre_Materia  / Nota_Definitiva / Nota 1 / Nota 2 / Nota 3 /
-    -   
+    -                   -            -         -        -     
 
 
 

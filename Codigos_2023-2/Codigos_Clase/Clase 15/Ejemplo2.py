@@ -27,7 +27,7 @@ matrix = [
 
 matrix = np.array(matrix)
 
-print(tabulate(matrix, headers=["Nombre", "Apellido", "Edad"]))
+print(tabulate(matrix, headers=["Nombre", "Apellido", "Edad"], tablefmt="fancy_grid"))
 
 
 
