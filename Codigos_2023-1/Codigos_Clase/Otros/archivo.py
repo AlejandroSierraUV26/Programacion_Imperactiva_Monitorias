@@ -1,5 +1,5 @@
 def separar(n):
-    n = str(n)
+    nb = str(n)
     separados = []
     for i in n:
         separados.append(i) 
