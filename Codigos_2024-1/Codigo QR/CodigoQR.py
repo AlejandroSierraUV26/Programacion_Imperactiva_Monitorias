@@ -4,6 +4,9 @@ import qrcode
 # Grupo 52 -> https://chat.whatsapp.com/D7bQ2fRvYVSBWnsEDIZLb0
 # Grupo 53 -> https://chat.whatsapp.com/Ik34vT6AVM35IgFlptsLkW
 
+# Test 1 -> https://forms.gle/hZrDRCZTfGPF2HhZ8
+
+
 def generar_qr_desde_link(link,nombre_codigo):
     qr = qrcode.QRCode(
         version=1,
