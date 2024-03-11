@@ -1,19 +1,12 @@
-import random
-import time
-
-numero_aleatorio = random.randint(1,7)
-
-time.sleep(4)
-print(numero_aleatorio) 
+"""
 
 
-numero_aleatorio = random.randint(1,7)
+    Se tiene la siguiente funcion :
 
-time.sleep(4)
-print(numero_aleatorio)
+        f(x) = (2x^2 - 3x + 1)/(x^3 - 5x^2 + 6x + 1)
+        
+        Para cuando x = 2 ->  y =
+                    x = 5 ->  y =
+                    x = 10 -> y =
 
-
-numero_aleatorio = random.randint(1,7)
-
-time.sleep(4)
-print(numero_aleatorio)
+"""
