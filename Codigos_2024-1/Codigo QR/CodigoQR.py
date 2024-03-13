@@ -7,6 +7,7 @@ import qrcode
 
 # Test 1 -> https://forms.gle/hZrDRCZTfGPF2HhZ8
 # Test 2 -> https://forms.gle/Da9FchGXojjmBMbv6
+# Test 3 -> https://forms.gle/afwQgGsXXk1sGro89
 
 def generar_qr_desde_link(link,nombre_codigo):
     qr = qrcode.QRCode(
