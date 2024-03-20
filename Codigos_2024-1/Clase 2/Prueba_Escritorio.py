@@ -16,6 +16,12 @@ Cada empleado debe cumplir con el pago de su salario
 
 Paga 4 % cada mes
 
+
+
+
+
+
+
 """
 #! Entrada de datos
 def leer_datos():    
