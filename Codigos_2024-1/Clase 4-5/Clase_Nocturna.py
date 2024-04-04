@@ -53,7 +53,7 @@ Verificación de números primos: Pide al usuario un número entero positivo y m
 Contador de dígitos: Pide al usuario un número entero positivo y cuenta y muestra la cantidad de dígitos en ese número.
 
 Contador de unidades, decenas y centenas: Pide al usuario un número entero positivo y cuenta y muestra la cantidad de 
-unidades, decenas y centenas que este tiene. Ejemplo: 456 tiene 4 centenas, 5 decenas y 6 unidades.
+unidades, decenas y centenas que este tiene. Ejemplo: 456 tiene 4 centenas, 5 decenas y 6 unidades.
 
 
 """
