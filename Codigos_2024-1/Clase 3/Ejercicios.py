@@ -1,6 +1,6 @@
 """
 Ejercicios para practicar el uso de las funciones en Python.
-3174031895
+
 
 1. Crear una funcion que reciba un numero entero y retorne el factorial de ese numero.
 Ejemplo: factorial(5) -> 120
@@ -18,6 +18,7 @@ Ejemplo: invertir_numero(1234) -> 4321
 y retorne el valor en grados celsius.
 Ejemplo: farenheit_a_celsius(32) -> 0
 Formula  ===>                           Celcius = (Farenheit - 32) * 5/9
+                                        Farenheti a Celcius
 
 6. Verificar si un numero de 4 digitos es capicua.
 (Se lee igual de derecha a izquierda que de izquierda a derecha)
@@ -33,10 +34,12 @@ Ejemplo: decimal_a_binario(100) -> 1100100
 
 Pista:
  
-Bucle While
+Bucle While o For
 Concatenacion
 Modulo
 
+8. Crear una funcion que reciba un numero entero 
+y retorne el numero en hexadecimal.
 
 
 
