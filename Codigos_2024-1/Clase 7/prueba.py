@@ -78,6 +78,7 @@ def jugar_ahorcado():
     intentos_restantes = 0
 
     while intentos_restantes < 6:
+        os.system('cls')
         print(IMAGENES_AHORCADO[intentos_restantes])
         print()
         print("\nIntentos:", intentos_restantes)

@@ -1,88 +1,8 @@
 """
-Existen diferentes metodos en python para manejar las listas.
-
-- append: Agrega un elemento al final de la lista
-
-- insert: Agrega un elemento en una posición específica
-
-- remove: Elimina un elemento de la lista
-
-- pop: Elimina un elemento de la lista en una posición específica
-
-- clear: Elimina todos los elementos de la lista
-
-- index: Devuelve la posición de un elemento en la lista
-
-- count: Cuenta cuantas veces se repite un elemento en la lista
-
-- sort: Ordena la lista
-
-- reverse: Invierte la lista
-
-"""
-
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-# append
-
-lista.append(11)
-print(lista)
-
-# insert
-
-lista.insert(0, 0)
-print(lista)
-
-# remove
-
-lista.remove(0)
-print(lista)
-
-# pop
-
-lista.pop(0)
-print(lista)
-
-# clear
-
-lista.clear()
-print(lista)
-
-# index
-
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(lista.index(5))
-
-# count
-
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 5, 5]
-print(lista.count(5))
-
-# sort
-
-lista.sort()
-print(lista)
-
-# reverse
-
-lista.reverse()
-print(lista)
-
-# copy
-
-lista2 = lista.copy()
-print(lista2)
-
-# extend
-
-lista.extend([11, 12, 13])
-print(lista)
-
-"""
     Realizar un algortimo que realize lo mismo para:
     
-    - count() --> Contar cuantas veces se repite un elemento en la lista
     - index() --> Devuelve la posición de un elemento en la lista
+    - count() --> Contar cuantas veces se repite un elemento en la lista
     - sort() --> Ordena la lista
     - reverse() --> Invierte la lista
     - copy() --> Copia la lista
@@ -100,6 +20,58 @@ print(lista)
     
 """
 
+def index(lista,numero):
+    #* Buscar la posicion de un elemento si esta repetido.
+    posiciones = []
+    for i in range(0,len(lista)):
+        if numero == lista[i]:
+            posiciones.append(i)
+    return posiciones
+def count(lista,numero):
+    #* Contar un elemento las veces que se repite
+    contador = 0
+    for i in range(0,len(lista)):
+        if numero == lista[i]:
+            contador+=1
+    return contador
+def sort(lista):
+    for i in range(0,len(lista)):
+        for j in range(0,len(lista)):
+            if lista[i] < lista[j]:
+                lista[i], lista[j] = lista[j], lista[i]
+    return lista
+
+def reverse(lista):
+    for i in range(0,len(lista)):
+        for j in range(0,len(lista)):
+            if lista[i] > lista[j]:
+                lista[i], lista[j] = lista[j], lista[i]
+    return lista
+
+def copy(lista):
+    lista_nueva = []
+    for i in range(0,len(lista)):
+        lista_nueva.append(lista[i])
+    return lista_nueva
+
+def al_cuadrado(x):
+    return x**2
+
+def multiplicar_2(x):
+    return x*2
+def funcion_funcion(lista,funcion):
+    for i in range(0,len(lista)):
+        lista[i] = funcion(lista[i])
+    return lista
+def maximo(lista):
+    mayor = lista[0]
+    for i in range(0,len(lista)):
+        if lista[i] > mayor:
+            mayor = lista[i]
+            
+    return mayor
+lista1 = [1,2,3,4,5,6,7,8,9,1]
+print(maximo(lista1))
 
 
 
