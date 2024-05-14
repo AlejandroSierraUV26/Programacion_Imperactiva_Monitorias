@@ -5,6 +5,8 @@ tablero = [["","",""],
            ["","",""]]
 
 
+
+
 def imprimir_tablero():
     for fila in tablero:
         print(fila)
