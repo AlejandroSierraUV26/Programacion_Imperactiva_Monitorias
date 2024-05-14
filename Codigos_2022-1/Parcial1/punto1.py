@@ -11,7 +11,7 @@ def pago(tipo_trabajador, horas_trabajadas,tiempo_empresa):
             if tiempo_empresa >=5:
                     bonificacion = 1.2
             if tipo_trabajador == 1:
-                salario_hora = 3000000/192
+                salario_hora = 3_000_000/192
                 pago = 3000000 + 1.2*horas_extra *salario_hora
             if tipo_trabajador == 2:
                 salario_hora = 2000000/192
