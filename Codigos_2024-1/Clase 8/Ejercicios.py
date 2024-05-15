@@ -92,15 +92,4 @@ def numeros_primos_gemelos(numero):
         if es_primo(i) and es_primo(i + 2):
             print(f"({i}, {i + 2})")
     
-
 numeros_primos_gemelos(20)
-
-
-
-    
-    
-    
-    
-    
-    
-    
