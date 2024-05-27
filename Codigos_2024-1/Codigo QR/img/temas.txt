@@ -1,0 +1,41 @@
+Calculo Monovariable
+
+    Limites
+    Derivadas
+    Integración
+
+Matematicas discretas 1
+
+    Lógica -> Tablas de verdad -> Proposiciones
+    Conjuntos -> Operaciones con conjuntos
+    Relaciones
+    Funciones
+    Grafos 
+    Árboles 
+
+POO
+
+    Clases
+    Objetos
+    Herencia
+    Polimorfismo
+    Encapsulamiento
+    Herencia Multiple
+    Interfaces
+
+
+Algebra Lineal
+
+    Vectores
+    Matrices
+    Determinantes
+    Sistemas de ecuaciones
+    Espacios vectoriales
+    Transformaciones lineales
+    Valores y vectores propios
+    
+
+
+
+
+    
