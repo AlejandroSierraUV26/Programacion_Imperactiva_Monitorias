@@ -54,67 +54,6 @@ def generar_matrix(colors, num_villas):
 
 
 def main():
-    # # Ejemplo de matriz de entrada
-    # M = [
-    # #    1  2  3  4  5  6  7  8  9  10
-    #     [0, 1, 0, 1, 0, 1, 0, 1, 1, 1],
-    #     [1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    #     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    # ]
-    
-    # """
-    # Prueba 1:
-    
-    #     0, 0, 0, 0, 0
-    #     0, 0, 0, 0, 0
-    #     0, 0, 0, 0, 0
-    #     0, 0, 0, 0, 0
-    #     0, 0, 0, 0, 0
-        
-    # Matriz de selección de villas:
-    #           1  2  3  4  5
-    # Villa 1: [1, 1, 1, 1, 1]
-        
-    # Prueba 2:
-    
-    #     0, 1, 1, 1, 1
-    #     1, 0, 1, 1, 1
-    #     1, 1, 0, 1, 1
-    #     1, 1, 1, 0, 1
-    #     1, 1, 1, 1, 0
-    
-    # Matriz de selección de villas:
-    #           1  2  3  4  5
-    # Villa 1: [1, 0, 0, 0, 0]
-    # Villa 2: [0, 1, 0, 0, 0]
-    # Villa 3: [0, 0, 1, 0, 0]
-    # Villa 4: [0, 0, 0, 1, 0]
-    # Villa 5: [0, 0, 0, 0, 1]
-        
-    
-    # """
-    
-    # colors, num_villas = coloreo(M)
-    # villa_matrix = generar_matrix(colors, num_villas)
-    # print("\nMatriz de selección de villas:")
-    # print("         |",end="")
-    # for i in range(0,len(M)):
-    #     if i != len(M)-1:
-    #         print(f"{i+1}",end="  ")
-    #     else:
-    #         print(f"{i+1}",end="")
-    # print("|", end="")
-    # print()
-    
-    # for i in range(num_villas):
-    #     print(f"Villa {i+1}: {villa_matrix[i]}")
     graph = obtener_datos_txt(fr"Pruebas\archivo.txt")
     villa_matrix = organizar_datos(graph)
     print(villa_matrix)
