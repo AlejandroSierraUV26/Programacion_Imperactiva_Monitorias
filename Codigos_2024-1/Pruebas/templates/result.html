@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matriz Resultante</title>
+
+    <style>
+        * {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .contenedor_todo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        pre{
+            font-size: 1.5rem;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 2rem;
+            margin: 10px;
+        }
+        h2{
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+        a{
+            font-size: 1.5rem;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Matriz Resultante</h1>
-    <pre>{{ result }}</pre>
-    <a href="/">Volver al formulario</a>
+    <div class="contenedor_todo">
+        <h1>Matriz Resultante</h1>
+        <pre>{{ result }}</pre>
+        <h2>Villas y sus equipos</h2>
+        <pre>{{ villas }}</pre>
+        <a href="/">Volver al formulario</a>
+    </div>
+
 </body>
+
 </html>

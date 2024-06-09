@@ -25,19 +25,20 @@ def submit():
     graph = proyecto.obtener_datos_txt('archivo.txt')
     colors, current_color = proyecto.coloreo(graph)
     villa_matrix = proyecto.generar_matrix(colors, current_color)
-    
-    
-    # Convertir la matriz a una cadena para mostrarla
+
+    villas = {}
+    for i, color in enumerate(colors):
+        if color + 1 not in villas:
+            villas[color + 1] = []
+        villas[color + 1].append(f'Equipo {i + 1}')  
+
+    sorted_villas = dict(sorted(villas.items()))
+
+    villas_str = '\n'.join([f'Villa {villa}: {", ".join(teams)}' for villa, teams in sorted_villas.items()])
+
     result_str = '\n'.join([','.join(map(str, row)) for row in villa_matrix])
-    for i in range(len(graph)):
-        print(graph[i])
-    
-    print()
-    print(villa_matrix)
-    print()
-    print(result_str)
-    
-    return render_template('result.html', result=result_str)
+
+    return render_template('result.html', result=result_str, villas=villas_str)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,16 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Envío</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contenedor_todo {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contenedor_superior {
+            width: 100%;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .contenedor_superior label {
+            font-size: 1.5em;
+
+        }
+
+        .contenedor_superior input[type="number"] {
+            font-size: 1.2em;
+        }
+
+        .lbl-switch {
+            display: inline-block;
+            width: 55px;
+            height: 30px;
+            background: #4CAF50;
+            border-radius: 100px;
+            position: relative;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        input[type="checkbox"]:checked+.lbl-switch {
+            background: #ff0000;
+
+        }
+
+        .lbl-switch:after {
+            position: absolute;
+            content: '';
+            width: 22px;
+            height: 22px;
+            background: #fff;
+            border-radius: 100px;
+            top: 4px;
+            left: 5px;
+            transition: 0.3s;
+        }
+
+        input[type="checkbox"]:checked+.lbl-switch::after {
+            left: 28px;
+
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 30px;
+            display: grid;
+            margin: auto;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Formulario de Envío</h1>
-    <form action="/submit" method="post">
-        <label for="graph_data">Ingrese la matriz de adyacencia (separada por comas y saltos de línea):</label><br>
-        <textarea id="graph_data" name="graph_data" rows="10" cols="30" required></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div class="contenedor_todo">
+        <div class="contenedor_superior">
+            <h1>Organizador de Equipos</h1>
+            <label for="numTeams">Ingrese el número de equipos:</label><br>
+            <input type="number" id="numTeams" name="numTeams" min="1" required><br><br>
+
+        </div>
+        <form action="/submit" method="post">
+            <input type="submit" value="Enviar" onclick="generateMatrixString()">
+            <div id="matrixContainer" class="container"></div>
+            <input type="hidden" id="graph_data" name="graph_data" required><br><br>
+
+        </form>
+
+    </div>
+    <script>
+        document.getElementById('numTeams').addEventListener('change', function () {
+            let numTeams = this.value;
+            let matrixContainer = document.getElementById('matrixContainer');
+            matrixContainer.innerHTML = '';
+            matrixContainer.style.gridTemplateColumns = `repeat(${parseInt(numTeams) + 1}, auto)`; // Adjust grid columns
+
+            
+            for (let i = 0; i <= numTeams; i++) {
+                let topLabel = document.createElement('label');
+                topLabel.textContent = i > 0 ? 'Equipo ' + i : '';
+                matrixContainer.appendChild(topLabel);
+            }
+
+            for (let i = 0; i < numTeams; i++) {
+                
+                let sideLabel = document.createElement('label');
+                sideLabel.textContent = 'Equipo ' + (i + 1);
+                matrixContainer.appendChild(sideLabel);
+
+                for (let j = 0; j < numTeams; j++) {
+                    let checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = 'checkbox' + String(i).padStart(2, '0') + String(j).padStart(2, '0');
+
+                    let labelCheckbox = document.createElement('label');
+                    labelCheckbox.htmlFor = checkbox.id;
+                    labelCheckbox.className = 'lbl-switch';
+
+                    if (i == j) {
+                        checkbox.disabled = true;
+                        labelCheckbox.style.background = '#aaa';
+                    }
+                    checkbox.addEventListener('change', function () {
+                        document.getElementById('checkbox' + String(j).padStart(2, '0') + String(i).padStart(2, '0')).checked = this.checked;
+                    });
+                    matrixContainer.appendChild(checkbox);
+                    matrixContainer.appendChild(labelCheckbox);
+                }
+            }
+        });
+
+        function generateMatrixString() {
+            let numTeams = document.getElementById('numTeams').value;
+            let output = '';
+            for (let i = 0; i < numTeams; i++) {
+                for (let j = 0; j < numTeams; j++) {
+                    let checkbox = document.getElementById('checkbox' + String(i).padStart(2, '0') + String(j).padStart(2, '0'));
+                    output += checkbox.checked ? '1' : '0';
+                    if (j < numTeams - 1) {
+                        output += ',';
+                    }
+                }
+                output += '\n';
+            }
+            document.getElementById('graph_data').value = output;
+        }
+    </script>
 </body>
+
 </html>
