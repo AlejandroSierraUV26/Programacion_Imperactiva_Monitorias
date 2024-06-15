@@ -110,7 +110,25 @@ def logaritmica():
 
     plt.grid(True)
     plt.show()
-
+def ventana_respuesta():
+    ventana = tk.Tk()
+    ventana.geometry("400x400")
+    label = tk.Label(ventana, text="Respuesta")
+    punto = tk.Label(ventana, text="Punto de corte: ")
+    entrada = tk.Entry(ventana)
+    punto.pack()
+    entrada.pack()
+    punto2 = tk.Label(ventana, text="Punto de corte: ")
+    entrada2 = tk.Entry(ventana)
+    punto2.pack()
+    entrada.pack()
+    label.pack()
+    ventana.mainloop()
+def verificar_punto_corte_lineal():
+    punto = int(punto.get())
+    punto2 = int(punto2.get())
+    
+    return punto, punto2
 def main():
     while True:
         print("Seleccione una opción:")

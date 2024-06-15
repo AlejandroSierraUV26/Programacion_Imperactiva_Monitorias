@@ -87,7 +87,7 @@ class MyTestCase(unittest.TestCase):
                            [0, 1, 0, 1, 0]]
         self.assertEqual(result, expected_result)
     def test_coloreo6(self):
-        grafo = [[0,0,1,1,0,0,0,0],
+        grafo =[[0,0,1,1,0,0,0,0],
                 [0,0,0,0,0,0,0,1],
                 [1,0,0,1,0,0,0,0],
                 [1,0,1,0,1,0,1,0],

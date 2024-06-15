@@ -57,4 +57,3 @@ mensaje3.grid(padx=5, pady=10, row = 3, column = 1)
 
 ventana_principal.mainloop()
 
-

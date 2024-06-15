@@ -1,0 +1,29 @@
+Cual es la capital de Francia, Paris, Madrid, Londres, Roma, Paris
+Cual es el rio mas largo del mundo, Amazonas, Nilo, Yangtze, Misisipi, Nilo
+Cual es el pais mas grande del mundo, Rusia, Canada, China, Estados Unidos, Rusia
+Cual es el pais mas poblado del mundo, China, India, Estados Unidos, Indonesia, China
+Cual es el pais mas pequeño del mundo, Vaticano, Monaco, Nauru, Tuvalu, Vaticano
+Cual es el pais mas extenso de America, Canada, Estados Unidos, Brasil, Argentina, Canada
+Que elemento quimico tiene el simbolo Hg, Mercurio, Plomo, Estaño, Oro, Mercurio
+Cual es el planeta mas grande del sistema solar, Jupiter, Saturno, Urano, Neptuno, Jupiter
+Cual es el animal mas grande del mundo, Ballena azul, Elefante africano, Tiburon blanco, Oso polar, Ballena azul
+Que pais es conocido como la tierra del sol naciente, Japon, China, India, Tailandia, Japon
+Cual es la razón social de la empresa de tecnologia Apple, Apple Inc, Apple Corp, Apple Tech, Apple Company, Apple Inc
+Que pinto Picasso en su cuadro Guernica, Bombardeo, Batalla, Incendio, Terremoto, Bombardeo
+Cual es el nombre del primer hombre en pisar la luna, Neil Armstrong, Buzz Aldrin, Michael Collins, Alan Shepard, Neil Armstrong
+Cual es el nombre del primer satelite artificial, Sputnik, Explorer, Vanguard, Telstar, Sputnik
+Que invento Thomas Edison, Bombilla, Telefono, Television, Radio, Bombilla
+En que año se descubrio America, 1492, 1498, 1500, 1502, 1492
+Como inicio la primera guerra mundial, Asesinato, Atentado, Secuestro, Robo, Asesinato
+Que lenguaje de programacion es mas antiguo, Fortran, Cobol, Lisp, Pascal, Fortran
+Cual es el sistema operativo mas usado en telefonos moviles, Android, iOS, Windows, Blackberry, Android
+Cual lenguaje de programacion es mas usado en la web, Javascript, Java, Python, Ruby, Javascript
+Cual es el navegador mas usado en la web, Chrome, Firefox, Safari, Opera, Chrome
+Como se llama el protocolo de transferencia de archivos, FTP, HTTP, SMTP, POP3, FTP
+Cual es el lenguaje de programacion mas usado en la actualidad, Java, C, Python, C++, Java
+Como se le llama a la enfermedad que afecta a los pulmones, Tuberculosis, Neumonia, Asma, Bronquitis, Tuberculosis
+Cual es el nombre del virus que afecto a la humanidad en 1918, Gripe española, Gripe aviar, Gripe porcina, Gripe asiatica, Gripe española
+Cual es el nombre del virus que afecto a la humanidad en 2020, Covid-19, H1N1, SARS, MERS, Covid-19
+Que compuesto quimico deteriora la piel humana con el paso del tiempo, Oxigeno, Hidrogeno, Ozono, Radicales libres, Radicales libres
+Cual fue la primer mujer en ganar un premio Nobel, Marie Curie, Rosalind Franklin, Dorothy Crowfoot Hodgkin, Ada Yonath, Marie Curie
+Cual fue la primer mujer en viajar al espacio, Valentina Tereshkova, Sally Ride, Mae Jemison, Svetlana Savitskaya, Valentina Tereshkova

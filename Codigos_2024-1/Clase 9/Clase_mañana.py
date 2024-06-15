@@ -3,7 +3,7 @@ def obtener_datos(ruta):
         nombres = archivo.read()
         nombres = nombres.split(",")
         
-        nombres = [nombre.strip() for nombre in nombres]
+        nombres = [nombre.strip().strip('"') for nombre in nombres]
     return nombres
 
 def escribir_nuevo_nombre(nombre_nuevo, ruta):
