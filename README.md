@@ -14,6 +14,7 @@ El repositorio está organizado en carpetas según los diferentes periodos acad�
 - **Codigos_2023-1**
 - **Codigos_2023-2**
 - **Codigos_2024-1**
+- **Codigos_2024-2**
 
 ## Contribuciones
 Si encuentras errores, tienes sugerencias o deseas contribuir, ¡no dudes en hacerlo! Las **monitorias** son un espacio colaborativo, y cualquier aporte es bienvenido.
