@@ -1,0 +1,9 @@
+Monitorias,True
+Cursera,False
+Proyecto Integral,False
+Desarrollo,False
+IA,False
+Ingles,True
+Paralelas,False
+Curso AWS,False
+ADA,False

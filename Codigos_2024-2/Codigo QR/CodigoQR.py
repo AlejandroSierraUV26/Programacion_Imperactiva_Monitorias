@@ -2,6 +2,7 @@ import qrcode
 
 # Grupo 51 -> https://chat.whatsapp.com/Kf5VcxbSYwu5jDZtbnozP0
 # Grupo 52 -> https://chat.whatsapp.com/D7bQ2fRvYVSBWnsEDIZLb0
+# 20 de Agosto -> https://forms.gle/dyTFPa7GbudpUG1t7
 
 
 def generar_qr_desde_link(link,nombre_codigo):
