@@ -1,10 +1,7 @@
 import qrcode
 
-# Grupo 51 -> https://chat.whatsapp.com/Kf5VcxbSYwu5jDZtbnozP0
-# Grupo 52 -> https://chat.whatsapp.com/D7bQ2fRvYVSBWnsEDIZLb0
-# 20 de Agosto -> https://forms.gle/dyTFPa7GbudpUG1t7
-
-
+# Drive link : 
+# * https://drive.google.com/drive/folders/1ZCJVAcBx7fO4eM8Z1oTUWVqkmSUISRIC?usp=sharing
 def generar_qr_desde_link(link,nombre_codigo):
     qr = qrcode.QRCode(
         version=1,
@@ -15,7 +12,7 @@ def generar_qr_desde_link(link,nombre_codigo):
     qr.add_data(link)
     qr.make(fit=True)
     qr_code = qr.make_image(fill_color="black", back_color="white")
-    qr_code.save(fr"Codigo QR\img\{nombre_codigo}.png")
+    qr_code.save(fr"img\{nombre_codigo}.png")
     
     
 
