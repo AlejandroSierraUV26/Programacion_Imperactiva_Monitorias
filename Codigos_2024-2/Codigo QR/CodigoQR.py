@@ -12,7 +12,8 @@ def generar_qr_desde_link(link,nombre_codigo):
     qr.add_data(link)
     qr.make(fit=True)
     qr_code = qr.make_image(fill_color="black", back_color="white")
-    qr_code.save(fr"img\{nombre_codigo}.png")
+    
+    qr_code.save(fr"Codigo QR\img\{nombre_codigo}.png")
     
     
 
