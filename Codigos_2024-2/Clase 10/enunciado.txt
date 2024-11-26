@@ -1,0 +1,10 @@
+Se requiere determinar los siguientes datos de la lista de alumnos de la materia "Algoritmos y Estructuras de Datos"
+
+1. Cantidad de alumnos inscriptos
+2. Cantidad de alumnos aprobados
+3. Cantidad de alumnos desaprobados
+4. Promedio de notas de los alumnos
+5. Nombre de Personas que deben hacer el habilitacion (nota menor a 3)
+6. Porcentaje de alumnos aprobados
+7. Estimulo academico (los 5 primeros promedios mas altos, si se repite algun promedio de los 5 se deben tomar el puesto repetido tambien, asi hasta llegar al puesto 5)
+8. Nombre de la persona con la nota mas baja en el rango de (0.0 a 2.0)

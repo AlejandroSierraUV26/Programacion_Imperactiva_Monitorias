@@ -19,14 +19,20 @@
     
     
     
-# def Es_primo(n):
-#     for i in range(2,n):
-#         if n%i == 0:
-#             return False
-#     return True
-
-# for i in range(1,30):
-#     if Es_primo(i):
-#         print(i)
+def Es_primo(n):
+    for i in range(2,n):
+        if n%i == 0:
+            return False
+    return True
+i = 0
+contador = 0
+while contador < 100:
+    if Es_primo(i) == True:
+        contador+=1
+        print(i)
+    i+=1
+print(contador)
+print(i)
+        
              
     

@@ -1,0 +1,4 @@
+Alejandro,20,red
+PedroAlimaña,50,green
+MartinElizas,20,blue
+Ulisses,25,blue
