@@ -90,8 +90,42 @@ def mostrar_parqueadero():
     
 
 def ganancias_dia():
-    print("Funcion ganancias")
-    pass
+    dia = input("Ingrese el dia a consultar: ")
+    mes = input("Ingrese el mes a consultar: ")
+    año = input("Ingrese el año a consultar: ")
+    dia = f"{año}-{mes}-{dia}"
+    
+    datos = leer_datos_gananacias()
+    vehiculos = leer_datos()
+    ganancias = 0
+    
+    for elem in datos:
+        if str(elem[2]) == dia:
+            for vehiculo in vehiculos:
+                if vehiculo[5] == elem[0]:
+                    if vehiculo[4] == "CARRO":
+                        print("Si")
+                        if vehiculo[7] == "Diario":
+                            ganancias += 5000
+                        # elif vehiculo[7] == "Semanal":
+                        #     ganancias += 25000
+                        # elif vehiculo[7] == "Mensual":
+                        #     ganancias += 80000
+                
+                    elif vehiculo[4] == "MOTO":
+                        if vehiculo[7] == "Diario":
+                            ganancias += 2000
+                        # elif vehiculo[7] == "Semanal":
+                        #     ganancias += 10000
+                        # elif vehiculo[7] == "Mensual":
+                        #     ganancias += 30000
+
+    return ganancias     
+    
+    print(f"Las ganancias del dia {dia} son: {ganancias}")
+    
+    
+     
 
 def ganancias_mes():
     print("Funcion ganancias")
@@ -100,6 +134,16 @@ def ganancias_mes():
 def ganancias_año():
     print("Funcion ganancias")
     pass
+
+def leer_datos_gananacias():
+    try:
+        with open(fr"Clase 11\ganancias.txt", "r") as archivo:
+            datos = archivo.read()
+            datos = datos.split("\n")
+            datos = [elem.split(",") for elem in datos if elem]
+            return datos
+    except FileNotFoundError:
+        return []
 def leer_datos():
     try:
         with open(fr"Clase 11\parqueadero.txt", "r") as archivo:
@@ -128,7 +172,7 @@ while True:
     elif opcion == 3:
         mostrar_parqueadero()
     elif opcion == 4:
-        ganancias_dia()
+        print(ganancias_dia())
     elif opcion == 5:
         ganancias_mes()
     elif opcion == 6:
