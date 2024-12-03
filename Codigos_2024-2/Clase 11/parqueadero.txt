@@ -1,0 +1,11 @@
+BMW, E30, NEGRO, 50000000, CARRO, MNU300, Alejandro, Diario
+Toyota, Corolla, BLANCO, 30000000, CARRO, ABC123, Maria, Mensual
+Honda, Civic, ROJO, 35000000, CARRO, DEF456, Juan, None
+Ford, Mustang, AZUL, 60000000, CARRO, GHI789, Carlos, Semanal
+Chevrolet, Camaro, AMARILLO, 55000000, CARRO, JKL012, Laura, None
+Nissan, Altima, GRIS, 32000000, CARRO, MNO345, Pedro, None
+Mazda, 3, VERDE, 28000000, CARRO, PQR678, Sofia, None
+Audi, A4, PLATEADO, 45000000, CARRO, STU901, Luis, None
+Mercedes, C-Class, NEGRO, 70000000, CARRO, VWX234, Ana, None
+TOYOTA, PRADO XL, BLANCO, 1000000000.0, Carro, AAA0001, ALejandro, Mensual
+Mazda, Miata, ROJO, 10000000.0, Carro, MNU000, Alejandro , Mensual
